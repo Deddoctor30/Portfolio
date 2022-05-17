@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(../fonts/gilroy/regular/style.css);
+@import url(../fonts/gilroy/medium/style.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+   &>*:not(:last-child){
+      margin: 0px 0px 50px 0px;
+   }
+
+   line-height: calc(([размер интервала]/[размер шрифта])*100%);
+
+   Javascript
+   Чтобы избежать конфликта присваиваний, делаем проверку на мобилку
+   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      код для телефона
+   } else {
+      код для десктопа
+   }
+*/
+* {
+  -webkit-transition: 0.3s all ease 0s;
+  transition: 0.3s all ease 0s;
+}
+
+html, body {
+  font-family: gilroy;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+}
+
+.img-adaptiv {
+  position: relative;
+}
+
+.img-adaptiv img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.text__sibtitle--hover a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 300px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  -webkit-box-shadow: 1px 1px 0 white inset, -1px -1px 0 white inset;
+          box-shadow: 1px 1px 0 white inset, -1px -1px 0 white inset;
+  cursor: pointer;
+}
+
+.btn_white {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.btn_white:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.btn_dark {
+  background-color: #333333;
+  color: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 0 black inset, -1px -1px 0 black inset;
+          box-shadow: 1px 1px 0 black inset, -1px -1px 0 black inset;
+}
+
+.btn_dark:hover {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  font-size: 24px;
+  color: red;
+  text-align: center;
+  margin: 150px 0px 0px 0px;
+}
