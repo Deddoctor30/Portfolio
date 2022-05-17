@@ -4,10 +4,108 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/favicon-2.png">
    <link rel="stylesheet" href="./css/style.css">
-   <title>Document</title>
+   <title>Portfolio</title>
 </head>
 <body>
-      hi
+      <div class="wrapper">
+            <div class="container">
+
+                  <header class="header">
+                        <div class="header__inner">
+                              <nav class="header__menu menu">
+                                    <div class="menu__personal">
+                                          Personal
+                                    </div>
+                                    <div class="menu__nav">
+                                          <ul class="menu__list">
+                                                <li class="menu__item">Обо мне</li>
+                                                <li class="menu__item">Резюме</li>
+                                                <li class="menu__item">Мои проекты</li>
+                                          </ul>
+                                    </div>
+                                    <div class="menu__links links">
+                                          <ul class="links__list">
+                                                <li class="links__item">
+                                                      <a target="_blank" href="https://github.com/Deddoctor30">
+                                                            <img src="./img/header/gitHub.png" alt="gitHub">
+                                                      </a>
+                                                </li>
+                                                <li class="links__item">
+                                                      <a target="_blank" href="https://hh.ru/resume/0fb61b60ff09d9709f0039ed1f656574537a76">
+                                                            <img src="./img/header/hh.png" alt="hh.ru">
+                                                      </a>
+                                                 </li>
+                                          </ul>
+                                    </div>
+                              </nav>
+                        </div>
+                  </header>
+
+                  <main class="main">
+                        <section class="main__about about">
+                              <div class="about__photo">
+                                    <img style="width: 500px" src="./img/main/about/me.jpg" alt="me">
+                              </div>
+                              <div class="about__info">
+                                    <h1 class="about__title"><span>Привет!</span>меня зовут Вадим, и я <span>Frontend - разработчик</span></h1>
+                                    <h2 class="about__text">Вот уже год как я познаю новое</h2>
+                              </div>
+                        </section>
+                        <section class="main__resume resume">
+                              <div class="resume__stack">
+                                    <div class="resume__title">Мой стак знаний:</div>
+                                    <ul class="resume__list">
+                                          <li class="resume__item">HTML</li>
+                                          <li class="resume__item">CSS(SCSS)</li>
+                                          <li class="resume__item">JavaScript</li>
+                                          <li class="resume__item">React</li>
+                                          <li class="resume__item">Git</li>
+                                          <li class="resume__item">БЭМ</li>
+                                    </ul>
+                              </div>
+                        </section>
+                        <section class="main__projects projects">
+                              <article class="projects__ojjo ojjo">
+                                    <div class="ojjo__img">
+                                          <img src="./img/main/projects/ojjo/1.JPG" alt="main">
+                                          <img src="./img/main/projects/ojjo/2.JPG" alt="goods">
+                                          <img src="./img/main/projects/ojjo/3.JPG" alt="my-slider">
+                                          <img src="./img/main/projects/ojjo/4.JPG" alt="collection">
+                                          <img src="./img/main/projects/ojjo/5.JPG" alt="slick-slider">
+                                          <img src="./img/main/projects/ojjo/6.JPG" alt="map">
+                                    </div>
+                                    <div class="ojjo__visit"><a href="https://deddoctor30.github.io/Ojjo-jewelry/" target="_blank">Посетить сайт</a></div>
+                                    <div class="ojjo__descr"></div>
+                              </article>
+                              <article class="projects__sweet sweet">
+                                    <div class="sweet__img">
+                                          <img src="./img/main/projects/sweets/1.JPG" alt="main">
+                                          <img src="./img/main/projects/sweets/2.JPG" alt="slider">
+                                          <img src="./img/main/projects/sweets/3.JPG" alt="hover">
+                                    </div>
+                                    <div class="sweet__visit"><a href="https://deddoctor30.github.io/Sweets-Shop/" target="_blank">Посетить сайт</a></div>
+                                    <div class="sweet__descr"></div>
+                              </article>
+                              <article class="projects__bicycles bicycles">
+                                    <div class="bicycles__img"></div>
+                                    <div class="bicycles__visit"><a href="https://deddoctor30.github.io/Bicycles/" target="_blank">Посетить сайт</a></div>
+                                    <div class="bicycles__descr"></div>
+                              </article>
+                              <article class="projects__cabins cabins">
+                                    <div class="cabins__img"></div>
+                                    <div class="cabins__visit"><a href="https://deddoctor30.github.io/Cabins/" target="_blank">Посетить сайт</a></div>
+                                    <div class="cabins__descr"></div>
+                              </article>
+                        </section>
+                  </main>
+
+                  <footer class="footer">
+                  </footer>
+
+            </div>
+      </div>
+<script src="../dist/js/bundle.js"></script>
 </body>
 </html>

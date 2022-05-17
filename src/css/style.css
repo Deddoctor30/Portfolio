@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url(../fonts/gilroy/regular/style.css);
-@import url(../fonts/gilroy/medium/style.css);
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -79,6 +78,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
+   font-family: 'PT Sans', sans-serif;
+   font-weight: 400,(i), 700(i);
+*/
+/*
+font-family: 'Rubik Mono One', sans-serif;
+   font-size: 100px;
+   font-weight: 400;
+*/
+/*
    &>*:not(:last-child){
       margin: 0px 0px 50px 0px;
    }
@@ -99,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
-  font-family: gilroy;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 1;
   font-weight: 400;
@@ -173,13 +181,6 @@ html, body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .container {
@@ -190,9 +191,59 @@ html, body {
           box-sizing: content-box;
 }
 
-body {
-  font-size: 24px;
-  color: red;
-  text-align: center;
-  margin: 150px 0px 0px 0px;
+.header {
+  width: 100%;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list > *:not(:last-child) {
+  margin: 0px 20px 0px 0px;
+}
+
+.menu__item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.links__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links__list > *:not(:last-child) {
+  margin: 0px 20px 0px 0px;
+}
+
+.links__item a img {
+  height: 40px;
 }

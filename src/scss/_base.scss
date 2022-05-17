@@ -1,7 +1,19 @@
 // _________________________________Шрифты____________________________________
-@import url(../fonts/gilroy/regular/style.css);
-@import url(../fonts/gilroy/medium/style.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+// Шрифт основной 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*
+   font-family: 'PT Sans', sans-serif;
+   font-weight: 400,(i), 700(i);
+*/
+
+// Шрифт заголовка 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+/*
+font-family: 'Rubik Mono One', sans-serif;
+   font-size: 100px;
+   font-weight: 400;
+*/
+
 // ___________________________________________________________________________
 
 
@@ -34,7 +46,7 @@
 
 
 html, body {
-   font-family: gilroy;
+   font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
    line-height: 1;
    font-weight: 400;
@@ -143,9 +155,12 @@ $modal_bg_color: #FFFFFF;
    min-height: 100%;
    overflow: hidden;
 
+   //_________________Цвет BG_________________
+   // background-color: #FFFBE6;
+
    //_________________Прибить футер к низу_________________
-   display: flex;
-   flex-direction: column;
+   // display: flex;
+   // flex-direction: column;
 }
 
 .container {
