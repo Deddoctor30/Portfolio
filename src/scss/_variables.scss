@@ -1,0 +1,19 @@
+
+// _____________________________SCSS переменные________________________________
+
+
+
+@mixin style($fz, $lh, $c) {
+   font-size: $fz;
+   line-height: $lh;
+   color: $c;
+}
+
+$main_color: #af272700;
+
+$font_color_light: #FFFFFF;
+$font_color_dark: #333333;
+$font_span_color: #d20a11;
+$button_color_light: #FFFFFF;
+$button_color_dark: #333333;
+

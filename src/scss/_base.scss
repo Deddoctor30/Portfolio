@@ -1,3 +1,5 @@
+// _____________________________SCSS переменные________________________________
+@import "./variables";
 // _________________________________Шрифты____________________________________
 // Шрифт основной 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -38,7 +40,7 @@ font-family: 'Rubik Mono One', sans-serif;
 
 
 * {
-   transition: 0.3s all ease 0s;
+   transition: 0.1s all ease 0s;
 }
 
 
@@ -69,24 +71,6 @@ html, body {
       object-position: center;
    }
 }
-
-
-// _____________________________SCSS переменные________________________________
-
-
-
-@mixin style($fz, $lh, $c) {
-   font-size: $fz;
-   line-height: $lh;
-   color: $c;
-}
-
-$font_color_light: #FFFFFF;
-$font_color_dark: #333333;
-$button_color_light: #FFFFFF;
-$button_color_dark: #333333;
-$header_line_color: #333333df;
-$modal_bg_color: #FFFFFF;
 
 
 
@@ -165,7 +149,7 @@ $modal_bg_color: #FFFFFF;
 
 .container {
    //_________________Ширина контейнера_________________
-   max-width: 1110px;
+   max-width: 1300px;
 
    //_____________________По центру_____________________
    margin: 0 auto;
