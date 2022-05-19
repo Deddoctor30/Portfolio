@@ -2,18 +2,24 @@
 .header {
    width: 100%;
    min-height: 100px;
-   display: flex;
-   // justify-content: center;
-   align-items: center;
+
+   position: relative;
    &__inner {
+      height: 100px;
       width: 100%;
+      position: fixed;
+      background-color: #fff;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      transition: top ease .5s;
    }
 
    &__menu {
    }
 }
 .menu {
-   width: 100%;
+   width: 1300px;
    display: flex;
    align-items: center;
    justify-content: space-between;

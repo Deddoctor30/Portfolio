@@ -1,0 +1,27 @@
+
+.resume {
+   &__stack {
+   }
+
+   &__title {
+      margin: 0px 0px 50px 0px;
+      text-align: center;
+      font-size: 36px;
+      position: relative;
+      letter-spacing: 3px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+   }
+
+   &__img {
+      &_html {
+         height: 100px;
+      }
+   }
+}
