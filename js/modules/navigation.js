@@ -25,8 +25,6 @@ const navigation = () => {
                });
                break;
          }
-
-      console.log(e.target.getAttribute('id'));
    });
 }
 
