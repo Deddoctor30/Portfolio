@@ -20,9 +20,9 @@
                                     </div>
                                     <div class="menu__nav">
                                           <ul class="menu__list">
-                                                <li class="menu__item">^ Стартовая</li>
-                                                <li class="menu__item">% Обо мне</li>
-                                                <li class="menu__item"># Мои проекты</li>
+                                                <li class="menu__item" id="start">^ Стартовая</li>
+                                                <li class="menu__item" id="about">% Обо мне</li>
+                                                <li class="menu__item" id="projects"># Мои проекты</li>
                                           </ul>
                                     </div>
                                     <div class="menu__links links">
@@ -63,31 +63,58 @@
                                     <ul class="resume__list">
                                           <li class="resume__item">
                                                 <!-- <p>HTML 5</p> -->
-                                                <img class="resume__img_html" src="./img/main/about/html-6.png" alt="html5"></li>
+                                                <img class="resume__img_html" src="./img/main/about/html.png" title="HTML 5" alt="html5"></li>
                                           <li class="resume__item">
                                                 <!-- <p>CSS(SCSS)</p> -->
-                                                <img class="resume__img_html" src="./img/main/about/css.png" alt="css3">
+                                                <img class="resume__img_html" src="./img/main/about/css.png" title="CSS 3" alt="css3">
                                           </li>
                                           <li class="resume__item">
                                                 <!-- <p>JavaScript</p> -->
-                                                <img class="resume__img_html" src="./img/main/about/js-4.jpg" alt="javascript">
+                                                <img class="resume__img_html" src="./img/main/about/js.png" title="JavaScript" alt="javascript">
                                           </li>
                                           <li class="resume__item">
                                                 <!-- <p>React</p> -->
-                                                <img class="resume__img_html" src="./img/main/about/react-2.png" alt="react">
+                                                <img class="resume__img_html" src="./img/main/about/react.png" title="React" alt="react">
                                           </li>
                                           <li class="resume__item">
                                                 <!-- <p>Git</p> -->
-                                                <img class="resume__img_html" src="./img/main/about/git-1.png" alt="git">
+                                                <img class="resume__img_html" src="./img/main/about/git.png" title="GIT" alt="git">
                                           </li>
                                     </ul>
                               </div>
                         </section>
+
+                        <section class="main__information information">
+                              <h2 class="information__title">Обо мне</h2>
+                              <div class="information__text">
+                                    <ul class="information__list">
+                                          <li class="information__item">
+                                                Привет, меня зовут Новиков Вадим и я начинающий Frontend разработчик. Я начал заниматься версткой сайтов в начале 2021 года
+                                                и изучил HTML5, CSS3 а именно препроцессор SCSS а также использую в своей работе систему контроля версий Git. Я владею английским на уровне intermediate 
+                                                и периодически обращаюсь к зарубежной технической документации чтобы решать возникющие вопросы
+                                          </li>
+                                          <li class="information__item">
+                                                Затем я долгое время изучал JavaScript и освоил его на довольно хорошем уровне. Для сборки использую Webpack и имею опыт работы и настройки Gulp.
+                                                Каждый мой проект соответствует концепции Pixel Perfect а также это отзывчивая и адаптивная верстка под десктоп с поддержкой старых браузеров и мобильные
+                                                устройства разного типа и разной диагонали экрана
+                                          </li>
+                                          <li class="information__item">
+                                                В данный момент я активно изучаю фреймворк React и его библиотеку Redux. Кроме того, в свободное время я люблю решать задачки
+                                                на сайте <span><a href="https://www.codewars.com/dashboard">CodeWars</a></span> которые на мой взгляд сильно расширяют скил взаимодействия с JavaScript
+                                          </li>
+                                          <li class="information__item">
+                                                Моей дальнейшей целью является усовершенствование своих навыков Frontend разработчика и я надеюсь найти работу в профессиональной компании разработчиков,
+                                                где смогу учиться у настоящих гуру своего дела и продолжать делать то, что приносит мне удовольствие и тем, что стало частью моей жизни
+                                          </li>
+                                    </ul>
+                              </div>
+                        </section>
+
                         <section class="main__projects projects">
                               <h2 class="projects__title">Мои работы</h2>
                               <div class="projects__inner">
                                     <article class="projects__content content">
-                                          <div class="content__img slider">
+                                          <div class="content__img content__img_small  slider">
                                                 <img src="./img/main/projects/ojjo/1.JPG" alt="main">
                                                 <img src="./img/main/projects/ojjo/2.JPG" alt="goods">
                                                 <img src="./img/main/projects/ojjo/3.JPG" alt="my-slider">
@@ -97,9 +124,13 @@
                                           </div>
                                           <div class="content__inner">
                                                 <div class="content__descr">
-                                                      <p>Ojjo jewelry - сайт состоит из четырех страниц, на нем реализована навигация, несколько интерактивных элементов включая фильтры и слайдеры. На главной странице находится самописный слайдер с доводкой на следующий слайд. Также применяется Slick Slider</p>
+                                                      <p><span class="span__letter-ojjo">O</span>jjo jewelry - сайт состоит из четырех страниц, на нем реализована навигация, несколько интерактивных элементов включая фильтры и слайдеры. На главной странице находится самописный слайдер с доводкой на следующий слайд. Также применяется Slick Slider</p>
                                                 </div>
-                                                <div class="content__visit btn-first"><a href="https://deddoctor30.github.io/Ojjo-jewelry/" target="_blank">Посетить сайт</a></div>
+                                                <a href="https://deddoctor30.github.io/Ojjo-jewelry/" target="_blank">
+                                                      <div class="content__visit btn-first">
+                                                            Посетить сайт
+                                                      </div>
+                                                </a>
                                           </div>
                                     </article>
                                     <article class="projects__content content">
@@ -110,9 +141,13 @@
                                           </div>
                                           <div class="content__inner">
                                                 <div class="content__descr">
-                                                      <p>Sweets Shop - вариант реализации сегмента сайта выбора товара. Реализована смена картинок товара по клику на превью, счетчик выбранного товара и скрытие шапки при скролле страницы</p>
+                                                      <p><span class="span__letter-sweets">S</span>weets Shop - вариант реализации сегмента сайта выбора товара. Реализована смена картинок товара по клику на превью, счетчик выбранного товара и скрытие шапки при скролле страницы</p>
                                                 </div>
-                                                <div class="content__visit btn-second"><a href="https://deddoctor30.github.io/Sweets-Shop/" target="_blank">Посетить сайт</a></div>
+                                                <a href="https://deddoctor30.github.io/Sweets-Shop/" target="_blank">
+                                                      <div class="content__visit btn-second">
+                                                            Посетить сайт
+                                                      </div>
+                                                </a>
                                           </div>
                                     </article>
                                     <article class="projects__content content">
@@ -122,10 +157,14 @@
                                                 <img src="./img/main/projects/bicycles/3.JPG" alt="exampl-3">
                                           </div>
                                           <div class="content__inner">
-                                                <div class="contents__descr">
-                                                      <p>Bicycles - страничка с версткой магазина велосипедов. Большое количество картинок разного масштаба расположены с использованием Flexbox'ов. На сайте реализована отзывчивая, адаптивная верстка</p>
+                                                <div class="content__descr">
+                                                      <p><span class="span__letter-bicycles">B</span>icycles - страничка с версткой магазина велосипедов. Большое количество картинок разного масштаба расположены с использованием Flexbox'ов. На сайте реализована отзывчивая, адаптивная верстка</p>
                                                 </div>
-                                                <div class="content__visit btn-third"><a href="https://deddoctor30.github.io/Bicycles/" target="_blank">Посетить сайт</a></div>
+                                                <a href="https://deddoctor30.github.io/Bicycles/" target="_blank">
+                                                      <div class="content__visit btn-third">
+                                                            Посетить сайт
+                                                      </div>
+                                                </a>
                                           </div>
                                     </article>
                                     <article class="projects__content content">
@@ -136,9 +175,13 @@
                                           </div>
                                           <div class="content__inner">
                                                 <div class="content__descr">
-                                                      <p>Сabins - верстка странички строительной компании со встроенными элементами видео на главной странице и несколькими блоками информации</p>
+                                                      <p><span class="span__letter-cabins">С</span>abins - верстка странички строительной компании со встроенными элементами видео на главной странице и несколькими блоками информации</p>
                                                 </div>
-                                                <div class="content__visit btn-fourth"><a href="https://deddoctor30.github.io/Cabins/" target="_blank">Посетить сайт</a></div>
+                                                <a href="https://deddoctor30.github.io/Cabins/" target="_blank">
+                                                      <div class="content__visit btn-fourth">
+                                                            Посетить сайт
+                                                      </div>
+                                                </a>
                                           </div>
                                     </article>
                               </div>
@@ -150,7 +193,8 @@
 
             </div>
       </div>
-<script src="./js/bundle.js"></script>
+<!-- <script src="./js/bundle.js"></script> -->
+<script src="../dist/js/bundle.js"></script>
 <link rel="stylesheet" href="./libs/slick/slick.css">
 <link rel="stylesheet" href="./libs/slick/slick-theme.css">
 <script src="./libs//jquerry/jquery-3.6.0.min.js"></script>

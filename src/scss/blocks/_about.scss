@@ -1,0 +1,77 @@
+@import "../variables";
+
+.about {
+   display: flex;
+   column-gap: 50px;
+
+   &__photo {
+      flex: 0 1 auto;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      padding: 0px 0px 10% 0px;
+
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+         object-position: center;
+         border: 10px solid $main_color;
+         border-radius: 100%;
+      }
+   }
+
+   &__info {
+      flex: 0 1 60%;
+   }
+
+   &__title {
+      font-size: 46px;
+      margin: 80px 0px 0px 0px;
+      
+   }
+
+   &__span {
+      &_first {
+         color: $font_span_color;
+         font-weight: 700;
+         font-size: 52px;
+      }
+
+      &_second {
+         font-size: 26px;
+         font-family: 'Rubik Mono One', sans-serif;
+
+      }
+      &_third {
+         font-style: italic;
+      }
+      &_fourth {
+         font-size: 26px;
+         color: $font_span_color;
+         font-weight: 700;
+      }
+   }
+
+   &__text {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      font-size: 18px;
+      margin: 50px 0px 0px 10px;
+      width: 350px;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 150%;
+   }
+
+   &__autor {
+      font-size: 18px;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 150%;
+   }
+}

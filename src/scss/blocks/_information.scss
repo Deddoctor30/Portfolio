@@ -1,0 +1,37 @@
+
+.information {
+   &__title {
+      margin: 0px 0px 50px 0px;
+      text-align: center;
+      font-size: 36px;
+      position: relative;
+      letter-spacing: 3px;
+   }
+
+   &__text {
+   }
+
+   &__list {
+      font-size: 18px;
+      letter-spacing: 150%;
+      line-height: 150%;
+      &>*:not(:last-child) {
+         margin-bottom: 60px;
+         &::after {
+            content: "";
+            width: 80%;
+            height: 1px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translate(-50%, 0);
+         }
+      }
+   }
+
+   &__item {
+      position: relative;
+      text-align: justify;
+   }
+}
