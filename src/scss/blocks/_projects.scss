@@ -3,6 +3,9 @@
    &__inner {
       &>*:not(:last-child){
          margin: 0px 0px 200px 0px;
+         @media (max-width:768px) {
+            margin: 0px 0px 100px 0px;
+         }
       }
    }
 
@@ -20,25 +23,38 @@
 .content {
 
    &__img {
+
       box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
       border-radius: 5px;
       width: 70%;
       margin: 0 auto;
+      @media (max-width: 769px) {
+         width: 100%;
+      }
+      @media (max-width: 767px) {
+         display: none;
+      }
       &_small {
-         width: 60%; 
+         width: 60%;
+         @media (max-width: 769px) {
+            width: 100%;
+         }
       }
    }
 
    &__inner {
       margin: 80px 0px 0px 0px;
       position: relative;
+      @media (max-width: 1282px) {
+         text-align: center;
+      }
    }
 
    &__visit {
       position: absolute;
       top: 0px;
-      // top: -100px;
       right: 60px;
+
       align-items: center;
       appearance: none;
       background-color: #fff;
@@ -69,20 +85,27 @@
          box-shadow: rgba(60, 64, 67, .30) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
       }
 
+      @media (max-width: 1282px) {
+         position: static;
+
+         margin: 30px 0px 0px 0px;
+      }
    }
 
    &__descr {
+      @media (max-width: 993px) {
+         padding: 0px 0px 0px 60px;
+      }
+      text-align: left;
       p {
          position: relative;
          margin: 0 auto;
          max-width: 800px;
          line-height: 150%;
          letter-spacing: 1.5px;
-
       }
    }
 }
-
 
 .span {
    &__letter-ojjo {

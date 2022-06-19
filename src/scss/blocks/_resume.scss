@@ -14,14 +14,38 @@
    &__list {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    &__item {
+      margin: 25px 0px;
+      @media (max-width: 755px) {
+         &:nth-child(1) {
+            flex: 0 1 33.333%;
+         }
+         &:nth-child(2) {
+            flex: 0 1 33.333%;
+            text-align: center;
+
+         }
+         &:nth-child(3) {
+            flex: 0 1 33.333%;
+            text-align: end;
+         }
+         &:nth-child(4) {
+            flex: 0 1 50%;
+            text-align: center;
+         }
+         &:nth-child(5) {
+            flex: 0 1 50%;
+            text-align: center;
+         }
+      }
    }
 
    &__img {
-      &_html {
-         height: 100px;
-      }
+      height: 100px;
+      text-align: center;
+
    }
 }
