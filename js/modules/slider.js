@@ -8,25 +8,16 @@ const slider = (target) => {
       slidesToShow: 1,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 769,
           settings: {
             arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
           }
         },
         {
           breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
+          settings: "unslick"
         }
       ]
     });
 }
-
 export default slider;
