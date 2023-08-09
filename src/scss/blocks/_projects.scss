@@ -107,6 +107,28 @@
 }
 
 .span {
+   &__letter-prb {
+      font-size: 42px;
+      font-weight: 700;
+      color: $font_color_light;
+      background-color: #bcafef;
+      display: inline-block;
+      padding: 10px 6px;
+      position: absolute;
+      top: -15px;
+      left: -50px;
+   }
+   &__letter-film {
+      font-size: 42px;
+      font-weight: 700;
+      color: $font_color_light;
+      background-color: #e1c798;
+      display: inline-block;
+      padding: 10px 6px;
+      position: absolute;
+      top: -15px;
+      left: -50px;
+   }
    &__letter-ojjo {
       font-size: 42px;
       font-weight: 700;
